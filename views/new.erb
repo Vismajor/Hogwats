@@ -11,12 +11,16 @@
   <input id="age" type="number" name="age"/>
   <br/>
 
-  <label for="house">Select a House:</label>
-  <select id="pizza_select" name="house">
-    <option value = "Griffydoor">Griffydoor</option>
+  <label for="house_id">Select a House:</label>
+  <select id="house_id" name="house_id">
+   <!--  <option value = "Griffydoor">Griffydoor</option>
     <option value = "Hawaiian">Hawaiian</option>
     <option value = "Snagglepuss">Snagglepuss</option>
-    <option value = "Raisinbran">Raisinbran</option>
+    <option value = "Raisinbran">Raisinbran</option> -->
+    <% @houses.each do |house| %>
+
+    <option value = <%= house.id  %>> <%= house.name  %></option>
+    <% end %>
   </select>
   <br/>
 

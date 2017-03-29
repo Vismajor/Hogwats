@@ -1,10 +1,19 @@
 <h1>Students</h1>
 
+
+
 <% @students.each do |student| %>
+
+<marquee behavior="bounce" direction=<%= rand(0..1) == 0 ? "left" : "right" %>><img src=<%= student.what_house.image_url %> width=5% alt="Swimming fish" /></marquee>
+
+<marquee behavior="bounce" direction=<%= rand(0..1) == 0 ? "left" : "right" %>>
+
   <p>First Name: <%= student.first_name %> </p>
   <p>Last Name: <%= student.last_name %> </p>
   <p>Age: <%= student.age %></p>
-  <p>House: <%= student.house %> </p>
+  <p>House: <%= student.what_house.name %> </p>
+  </marquee>
+
 <!--   <p><a href='/pizzas/<%#= pizza.id %>'> Show Order</a></p>
  -->
   <hr/>

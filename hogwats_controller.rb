@@ -3,6 +3,7 @@ require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require( 'pry-byebug' )
 require_relative('./models/student')
+require_relative('./models/house')
 require_relative('db/sql_runner')
 
 
@@ -18,5 +19,7 @@ post '/students' do
 end
 
 get '/students/new' do
+  @houses = House.all()
   erb(:new)
 end
+

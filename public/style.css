@@ -1,0 +1,21 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Abandoned_school_near_Derry%2C_Louisiana_IMG_3477.JPG");
+    background-size: 100%;
+    color: lime;
+    text-align: center;
+    font-family: "Papyrus", Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 20px 20px gold;
+
+  }
+
+
+h1 {
+  font-family: "Comic Sans MS", Times, Serif;
+  font-weight: bold;
+  color: hotpink;
+  font-size: 60px;
+  text-shadow: 2px 2px yellow;
+
+}
